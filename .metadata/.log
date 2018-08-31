@@ -94,3 +94,12 @@ Contains: Output of the instance creation command:
 !MESSAGE Output of the instance creation command:
 'create' command failed. Unable to instances directory 'C:\Program Files (x86)\Spring Tools\sts-bundle\pivotal-tc-server\instances'.
 
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-08-31 17:44:06.658
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-08-31 17:50:13.207
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-31 17:51:22.282
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
