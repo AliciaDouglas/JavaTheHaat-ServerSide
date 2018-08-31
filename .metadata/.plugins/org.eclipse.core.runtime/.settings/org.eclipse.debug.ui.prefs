@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.debug.ui.Color=225,30,70
 org.eclipse.debug.ui.MemoryHistoryKnownColor=235,235,235
 org.eclipse.debug.ui.MemoryHistoryUnknownColor=170,175,185
@@ -10,4 +11,7 @@ org.eclipse.debug.ui.errorColor=172,193,172
 org.eclipse.debug.ui.inColor=226,226,226
 org.eclipse.debug.ui.outColor=226,226,226
 overriddenByCSS=,org.eclipse.debug.ui.Color,org.eclipse.debug.ui.MemoryHistoryKnownColor,org.eclipse.debug.ui.MemoryHistoryUnknownColor,org.eclipse.debug.ui.PREF_CHANGED_VALUE_BACKGROUND,org.eclipse.debug.ui.changedDebugElement,org.eclipse.debug.ui.errorColor,org.eclipse.debug.ui.inColor,org.eclipse.debug.ui.outColor,org.eclipse.debug.ui.consoleBackground,
+=======
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+>>>>>>> 5d337d8ba28fde9b3b4ea4abffd53052fd15c817
 preferredTargets=default\:default|
