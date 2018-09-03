@@ -1,8 +1,19 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="CATEGORY")
 public class Category {
 	
+	@Id
+	@Column(name="CATEGORY_ID")
 	private int categoryId;
+	
+	@Column(name="CATEGORY")
 	private String category;
 	
 	public Category (){}

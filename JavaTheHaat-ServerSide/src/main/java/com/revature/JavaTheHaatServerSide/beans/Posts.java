@@ -1,13 +1,38 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="POSTS")
 public class Posts {
 	
+	@Id
+	@Column(name="P_ID")
+	@SequenceGenerator(sequenceName="POSTS_SEQ", name="POSTS_SEQ")
+	@GeneratedValue(generator="POSTS_SEQ", strategy=GenerationType.SEQUENCE)
 	private int pId;
+	
 	private int uId;
+	
+	@Column(name="TITLE")
 	private String title;
+	
+	@Column(name="DESCRIPTION")
 	private String description;
+	
+	@Column(name="VIDEO")
 	private String video;
+	
+	@Column(name="TIME_SUBMISSION")
 	private String timeSubmission;
+	
+	
 	private int categoryId;
 	
 	public Posts (){}

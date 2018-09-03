@@ -1,8 +1,19 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ACCOUNT_TYPE")
 public class AccountType {
 
+	@Id
+	@Column(name="ACC_TYPE_ID")
 	private int accTypeId;
+	
+	@Column(name="ACC_TYPE")
 	private String accType;
 	
 	
