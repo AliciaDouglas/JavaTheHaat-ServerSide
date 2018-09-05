@@ -3,8 +3,11 @@ package com.revature.JavaTheHaatServerSide.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.revature.JavaTheHaatServerSide.beans.Posts;
 
+@Service
 public class PostsService {
 
 	/**

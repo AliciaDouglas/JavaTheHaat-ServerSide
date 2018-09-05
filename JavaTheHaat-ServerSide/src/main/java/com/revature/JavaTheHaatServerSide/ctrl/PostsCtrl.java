@@ -1,27 +1,31 @@
 package com.revature.JavaTheHaatServerSide.ctrl;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.JavaTheHaatServerSide.beans.Posts;
+import com.revature.JavaTheHaatServerSide.service.PostsService;
 
 @RestController
 public class PostsCtrl {
 
-//	@Autowired
-//	PostsService postService;
+	@Autowired
+	PostsService postService;
 	
 	/**
 	 * Get all posts
 	 * @return
 	 */
 	@GetMapping("/posts")
-	public String getAllPosts(){
+	public List<Posts> getAllPosts(){
 		System.out.println("getAllPosts -GET");
-//		return postService.getAllPosts();
-		return "posts -GET";
+		List<Posts> posts = postService.getAllPosts();
+		return posts;
 	}
 	
 	/**

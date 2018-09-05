@@ -14,8 +14,8 @@ import com.revature.JavaTheHaatServerSide.service.UsersService;
 @RestController
 public class UsersCtrl {
 	
-//	@Autowired
-//	UsersService userService;
+	@Autowired
+	UsersService userService;
 	
 	/**
 	 * Takes in a users login information and checks to see if they match a user in the db
