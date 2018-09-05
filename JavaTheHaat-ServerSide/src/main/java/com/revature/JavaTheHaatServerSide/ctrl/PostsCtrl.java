@@ -34,10 +34,10 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@PostMapping("/posts")
-	public String newPost(@RequestBody Posts post) {
+	public Posts newPost(@RequestBody Posts post) {
 		System.out.println("newPost -POST");
-//		post = postService.newPost(post);
-		return "posts -POST";
+		post = postService.newPost(post);
+		return post;
 	}
 	
 }

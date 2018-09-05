@@ -1,23 +1,27 @@
 package com.revature.JavaTheHaatServerSide.service;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.JavaTheHaatServerSide.beans.Posts;
+import com.revature.JavaTheHaatServerSide.repository.PostsRepo;
 
 @Service
 public class PostsService {
+	
+	@Autowired
+	PostsRepo postsRepo;
 
 	/**
 	 * Gets all posts from the DAO
 	 * @return
 	 */
 	public List<Posts> getAllPosts() {
-		List<Posts> posts = new ArrayList<>();
-		posts.add(new Posts(1, 1, "IT WORKS", "YAY", null, null, 1));
-		return posts;
+		System.out.println("posts service -getAllPosts");
+		return (List<Posts>) postsRepo.findAll();
 	}
 
 	/**
@@ -27,8 +31,9 @@ public class PostsService {
 	 * @return
 	 */
 	public Posts newPost(Posts post) {
-		// TODO Auto-generated method stub
-		return null;
+		System.out.println("posts service -newPost");
+		post.setTimeSubmission(new Date());
+		return postsRepo.save(post);
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,14 +32,14 @@ public class Posts {
 	private String video;
 	
 	@Column(name="TIME_SUBMISSION")
-	private String timeSubmission;
+	private Date timeSubmission;
 	
 	
 	private int categoryId;
 	
 	public Posts (){}
 
-	public Posts(int pId, int uId, String title, String description, String video, String timeSubmission,
+	public Posts(int pId, int uId, String title, String description, String video, Date timeSubmission,
 			int categoryId) {
 		super();
 		this.pId = pId;
@@ -48,7 +50,6 @@ public class Posts {
 		this.timeSubmission = timeSubmission;
 		this.categoryId = categoryId;
 	}
-	
 	
 
 	public int getpId() {
@@ -91,11 +92,11 @@ public class Posts {
 		this.video = video;
 	}
 
-	public String getTimeSubmission() {
+	public Date getTimeSubmission() {
 		return timeSubmission;
 	}
 
-	public void setTimeSubmission(String timeSubmission) {
+	public void setTimeSubmission(Date timeSubmission) {
 		this.timeSubmission = timeSubmission;
 	}
 
