@@ -1,7 +1,5 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
-import java.util.Date;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,7 +28,7 @@ public class Comments {
 	
 	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinColumn(name="U_ID")
-	private int uId;
+	private Users user;
 	
 	@Column(name="COMMENT_TEXT")
 	private String commentText;
@@ -42,11 +40,11 @@ public class Comments {
 		super();
 	}
 
-	public Comments(int cId, Posts post, int uId, String commentText, String timeSubmission) {
+	public Comments(int cId, Posts post, Users user, String commentText, String timeSubmission) {
 		super();
 		this.cId = cId;
 		this.post = post;
-		this.uId = uId;
+		this.user = user;
 		this.commentText = commentText;
 		this.timeSubmission = timeSubmission;
 	}
@@ -67,12 +65,12 @@ public class Comments {
 		this.post = post;
 	}
 
-	public int getuId() {
-		return uId;
+	public Users getuId() {
+		return user;
 	}
 
-	public void setuId(int uId) {
-		this.uId = uId;
+	public void setuId(Users user) {
+		this.user = user;
 	}
 
 	public String getCommentText() {
@@ -93,7 +91,7 @@ public class Comments {
 
 	@Override
 	public String toString() {
-		return "Comments [cId=" + cId + ", post=" + post + ", uId=" + uId + ", commentText=" + commentText
+		return "Comments [cId=" + cId + ", post=" + post + ", user=" + user + ", commentText=" + commentText
 				+ ", timeSubmission=" + timeSubmission + "]";
 	}
 	

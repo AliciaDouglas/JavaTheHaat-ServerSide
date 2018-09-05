@@ -281,3 +281,151 @@
 2018-09-04 14:17:16,583 [Worker-119: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-09-04 14:17:16,593 [Worker-119: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-04 14:17:16,593 [Worker-119: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 15:48:12,335 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 15:48:12,337 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 15:48:12,400 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 15:48:12,410 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 15:48:12,410 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 16:05:37,307 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:05:37,307 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 16:05:37,602 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 16:05:37,617 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:05:37,619 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 16:10:24,068 [Worker-139: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:10:24,079 [Worker-139: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 16:10:24,126 [Worker-139: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 16:10:24,140 [Worker-139: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:10:24,140 [Worker-139: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 16:30:14,805 [Worker-144: Launching JavaTheHaat-ServerSide - JavaTheHaatServerSideApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:30:14,807 [Worker-144: Launching JavaTheHaat-ServerSide - JavaTheHaatServerSideApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 16:30:14,895 [Worker-144: Launching JavaTheHaat-ServerSide - JavaTheHaatServerSideApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 16:30:14,902 [Worker-144: Launching JavaTheHaat-ServerSide - JavaTheHaatServerSideApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:30:14,902 [Worker-144: Launching JavaTheHaat-ServerSide - JavaTheHaatServerSideApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 16:32:11,984 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:32:11,986 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 16:32:12,011 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 16:32:12,036 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:32:12,036 [Worker-127: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-04 16:42:26,021 [Worker-152: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:42:26,022 [Worker-152: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-04 16:42:26,059 [Worker-152: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-04 16:42:26,081 [Worker-152: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-04 16:42:26,083 [Worker-152: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:27:59,877 [Worker-172: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.revature:JavaTheHaat-ServerSide:0.0.1-SNAPSHOT @ C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\pom.xml.
+2018-09-05 09:28:02,515 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:02,611 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:28:02,771 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:28:02,779 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:02,799 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:28:13,351 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:13,359 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:28:13,379 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:28:13,407 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:13,407 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:28:20,309 [Worker-170: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-05 09:28:22,095 [Worker-170: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.revature:JavaTheHaat-ServerSide:0.0.1-SNAPSHOT @ C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\pom.xml.
+2018-09-05 09:28:24,012 [Worker-170: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/main/java
+2018-09-05 09:28:24,028 [Worker-170: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:28:24,028 [Worker-170: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:28:24,028 [Worker-170: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/test/java
+2018-09-05 09:28:24,727 [Worker-170: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2018-09-05 09:28:29,718 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:29,722 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:28:29,830 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:28:29,872 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:28:29,876 [Worker-174: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:29:54,577 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:29:54,577 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:29:54,605 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:29:54,609 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:29:54,613 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:30:06,125 [Worker-158: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-05 09:30:08,161 [Worker-158: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.revature:JavaTheHaat-ServerSide:0.0.1-SNAPSHOT @ C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\pom.xml.
+2018-09-05 09:30:09,658 [Worker-158: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/main/java
+2018-09-05 09:30:09,668 [Worker-158: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:30:09,668 [Worker-158: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:30:09,672 [Worker-158: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/test/java
+2018-09-05 09:30:10,983 [Worker-158: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2018-09-05 09:30:18,234 [Worker-181: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:30:18,238 [Worker-181: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:30:18,657 [Worker-181: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:30:18,677 [Worker-181: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:30:18,681 [Worker-181: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:31:11,241 [Worker-170: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.revature:JavaTheHaat-ServerSide:0.0.1-SNAPSHOT @ C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\pom.xml.
+2018-09-05 09:31:13,639 [Worker-170: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:13,661 [Worker-170: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:31:13,681 [Worker-170: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:31:13,719 [Worker-170: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:13,767 [Worker-170: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:31:24,614 [Worker-175: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:24,614 [Worker-175: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:31:24,690 [Worker-175: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:31:24,722 [Worker-175: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:24,746 [Worker-175: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:31:27,862 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-05 09:31:31,253 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.revature:JavaTheHaat-ServerSide:0.0.1-SNAPSHOT @ C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\pom.xml.
+2018-09-05 09:31:33,471 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/main/java
+2018-09-05 09:31:33,489 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:31:33,507 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JavaTheHaat-ServerSide/src/main/resources
+2018-09-05 09:31:33,507 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JavaTheHaat-ServerSide/src/test/java
+2018-09-05 09:31:34,820 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2018-09-05 09:31:43,938 [Worker-183: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:43,938 [Worker-183: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:31:44,010 [Worker-183: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:31:44,026 [Worker-183: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:31:44,030 [Worker-183: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:51:24,021 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:51:24,032 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:51:24,050 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:51:24,052 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:51:24,062 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 09:52:12,055 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:52:12,249 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 09:52:12,281 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 09:52:12,312 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 09:52:12,312 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:46:21,097 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:46:21,099 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:46:21,428 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:46:21,435 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:46:21,487 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:47:16,026 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:47:16,062 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:47:16,077 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:47:16,088 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:47:16,088 [Worker-195: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:48:38,536 [Worker-211: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:48:38,540 [Worker-211: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:48:38,721 [Worker-211: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:48:38,738 [Worker-211: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:48:38,740 [Worker-211: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:51:57,850 [Worker-213: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:51:57,931 [Worker-213: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:51:58,252 [Worker-213: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:51:58,266 [Worker-213: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:51:58,267 [Worker-213: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:53:52,742 [Worker-212: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:53:52,743 [Worker-212: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:53:52,786 [Worker-212: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:53:52,795 [Worker-212: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:53:52,802 [Worker-212: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 12:56:16,036 [Worker-205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:56:16,253 [Worker-205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 12:56:16,988 [Worker-205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 12:56:17,296 [Worker-205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 12:56:17,433 [Worker-205: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 13:02:07,260 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:02:07,356 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 13:02:07,703 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 13:02:07,713 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:02:07,731 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 13:02:11,427 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:02:11,539 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 13:02:11,975 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 13:02:12,065 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:02:12,188 [Worker-220: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
+2018-09-05 13:04:47,194 [Worker-223: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:04:47,196 [Worker-223: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-09-05 13:04:47,221 [Worker-223: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-05 13:04:47,231 [Worker-223: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-05 13:04:47,231 [Worker-223: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Alicia\my_git_repos\JavaTheHaat-ServerSide\JavaTheHaat-ServerSide\src\test\resources
