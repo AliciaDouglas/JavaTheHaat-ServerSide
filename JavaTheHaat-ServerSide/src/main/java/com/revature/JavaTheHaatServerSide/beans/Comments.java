@@ -57,14 +57,6 @@ public class Comments {
 		this.cId = cId;
 	}
 
-	public Posts getPost() {
-		return post;
-	}
-
-	public void setPost(Posts post) {
-		this.post = post;
-	}
-
 	public Users getuId() {
 		return user;
 	}

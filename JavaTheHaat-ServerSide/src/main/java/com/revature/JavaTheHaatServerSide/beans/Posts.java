@@ -1,12 +1,16 @@
 package com.revature.JavaTheHaatServerSide.beans;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -20,6 +24,7 @@ public class Posts {
 	@GeneratedValue(generator="POSTS_SEQ", strategy=GenerationType.SEQUENCE)
 	private int pId;
 	
+	@Column(name="U_ID")
 	private int uId;
 	
 	@Column(name="TITLE")
@@ -34,13 +39,20 @@ public class Posts {
 	@Column(name="TIME_SUBMISSION")
 	private Date timeSubmission;
 	
-	
 	private int categoryId;
+	
+	@OneToMany(mappedBy="post", fetch=FetchType.EAGER)
+	private Set<Steps> steps = new HashSet<Steps>();
+	
+	@OneToMany(mappedBy="post", fetch=FetchType.EAGER)
+	private Set<Comments> comments = new HashSet<Comments>();
 	
 	public Posts (){}
 
-	public Posts(int pId, int uId, String title, String description, String video, Date timeSubmission,
-			int categoryId) {
+
+	
+	public Posts(int pId, int uId, String title, String description, String video, Date timeSubmission, int categoryId,
+			Set<Steps> steps, Set<Comments> comments) {
 		super();
 		this.pId = pId;
 		this.uId = uId;
@@ -49,8 +61,11 @@ public class Posts {
 		this.video = video;
 		this.timeSubmission = timeSubmission;
 		this.categoryId = categoryId;
+		this.steps = steps;
+		this.comments = comments;
 	}
-	
+
+
 
 	public int getpId() {
 		return pId;
@@ -107,6 +122,34 @@ public class Posts {
 	public void setCategoryId(int categoryId) {
 		this.categoryId = categoryId;
 	}
+
+	
+	
+	public Set<Steps> getSteps() {
+		return steps;
+	}
+
+
+
+
+	public void setSteps(Set<Steps> steps) {
+		this.steps = steps;
+	}
+
+
+
+
+	public Set<Comments> getComments() {
+		return comments;
+	}
+
+
+
+	public void setComments(Set<Comments> comments) {
+		this.comments = comments;
+	}
+
+
 
 	@Override
 	public String toString() {

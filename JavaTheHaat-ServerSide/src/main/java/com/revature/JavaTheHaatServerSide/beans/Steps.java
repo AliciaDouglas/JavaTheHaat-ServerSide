@@ -71,25 +71,6 @@ public class Steps {
 	}
 
 
-	
-
-
-	public Posts getPost() {
-		return post;
-	}
-
-
-
-
-
-	public void setPost(Posts post) {
-		this.post = post;
-	}
-
-
-
-
-
 	public int getStepNum() {
 		return stepNum;
 	}
