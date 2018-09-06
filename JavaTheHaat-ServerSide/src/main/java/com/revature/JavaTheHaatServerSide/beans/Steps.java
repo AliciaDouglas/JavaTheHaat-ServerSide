@@ -22,8 +22,11 @@ public class Steps {
 	@GeneratedValue(generator="STEPS_SEQ", strategy=GenerationType.SEQUENCE)
 	private int sId;
 	
+	@Column(name="P_ID", nullable=false)
+	private int pId;
+	
 	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
-	@JoinColumn(name="P_ID")
+	@JoinColumn(name="P_ID", insertable=false, updatable=false)
 	private Posts post;
 	
 	@Column(name="STEP_NUM")
@@ -44,19 +47,18 @@ public class Steps {
 	}
 
 
-	
 
 
-	public Steps(int sId, Posts post, int stepNum, String stepName, String stepText, String pic) {
+	public Steps(int sId, int pId, Posts post, int stepNum, String stepName, String stepText, String pic) {
 		super();
 		this.sId = sId;
+		this.pId = pId;
 		this.post = post;
 		this.stepNum = stepNum;
 		this.stepName = stepName;
 		this.stepText = stepText;
 		this.pic = pic;
 	}
-
 
 
 
@@ -68,6 +70,20 @@ public class Steps {
 
 	public void setsId(int sId) {
 		this.sId = sId;
+	}
+
+
+	
+	
+	public int getpId() {
+		return pId;
+	}
+
+
+
+
+	public void setpId(int pId) {
+		this.pId = pId;
 	}
 
 
