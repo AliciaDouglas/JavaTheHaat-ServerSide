@@ -36,6 +36,7 @@ public class PostsCtrl {
 	@PostMapping("/posts")
 	public Posts newPost(@RequestBody Posts post) {
 		System.out.println("newPost -POST");
+		System.out.println(post);
 		post = postService.newPost(post);
 		return post;
 	}
