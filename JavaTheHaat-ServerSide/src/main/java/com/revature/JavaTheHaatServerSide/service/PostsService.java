@@ -60,4 +60,15 @@ public class PostsService {
 		return (List<Posts>) postsRepo.findByUId(id);
 	}
 
+	/**
+	 * updates a post using the post object passed in
+	 * @param post
+	 * @return
+	 */
+	public Posts updatePost(Posts post) {
+		Posts updatedPost = postsRepo.save(post);
+		stepsRepo.saveAll(post.getSteps());
+		return updatedPost;
+	}
+
 }
