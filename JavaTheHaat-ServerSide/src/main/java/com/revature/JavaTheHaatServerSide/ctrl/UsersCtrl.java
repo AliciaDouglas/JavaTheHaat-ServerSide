@@ -1,5 +1,7 @@
 package com.revature.JavaTheHaatServerSide.ctrl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -35,10 +37,19 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PostMapping("/users")
-	public String registerUser(@RequestBody Users user) {
+	public Users registerUser(@RequestBody Users user) {
 		System.out.println("register -POST");
-//		user = userService.registerUser(user);
-		return "/users -POST";
+		return userService.registerUser(user);
+	}
+	
+	/**
+	 * Get all users
+	 * @return
+	 */
+	@GetMapping("/users")
+	public List<Users> getAllUsers(){
+		System.out.println("/users - GET");
+		return userService.getAllUsers();
 	}
 	
 	/**
@@ -47,10 +58,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@GetMapping("/users/{id}")
-	public String getUserById(@PathVariable int id) {
+	public Users getUserById(@PathVariable int id) {
 		System.out.println("getUsersById -GET");
-//		Users user = userService.getUserById(id);
-		return "/users/{id} -GET" + id;
+		Users user = userService.getUserById(id);
+		return user;
 	}
 	
 	/**

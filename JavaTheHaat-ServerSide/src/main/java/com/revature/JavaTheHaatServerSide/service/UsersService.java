@@ -1,12 +1,19 @@
 package com.revature.JavaTheHaatServerSide.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.JavaTheHaatServerSide.beans.Users;
+import com.revature.JavaTheHaatServerSide.repository.UsersRepo;
 
 @Service
 public class UsersService {
 
+	@Autowired
+	UsersRepo usersRepo;
+	
 	/**
 	 * Takes in a Users object and sends to DAO to see if user exists
 	 * @param user
@@ -24,8 +31,7 @@ public class UsersService {
 	 * @return user
 	 */
 	public Users registerUser(Users user) {
-		// TODO Auto-generated method stub
-		return null;
+		return usersRepo.save(user);
 	}
 
 	
@@ -35,8 +41,7 @@ public class UsersService {
 	 * @return
 	 */
 	public Users getUserById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return usersRepo.findByUId(id);
 	}
 
 	/**
@@ -47,6 +52,14 @@ public class UsersService {
 	public Users updateUserInfo(Users user) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	/**
+	 * Get all users
+	 * @return
+	 */
+	public List<Users> getAllUsers() {
+		return (List<Users>) usersRepo.findAll();
 	}
 
 }
