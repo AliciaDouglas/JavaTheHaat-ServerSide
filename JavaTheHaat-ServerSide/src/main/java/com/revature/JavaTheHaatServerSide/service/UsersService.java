@@ -1,7 +1,10 @@
 package com.revature.JavaTheHaatServerSide.service;
 
+import org.springframework.stereotype.Service;
+
 import com.revature.JavaTheHaatServerSide.beans.Users;
 
+@Service
 public class UsersService {
 
 	/**
