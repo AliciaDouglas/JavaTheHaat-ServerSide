@@ -3,6 +3,7 @@ package com.revature.JavaTheHaatServerSide.ctrl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -50,9 +51,21 @@ public class PostsCtrl {
 	 */
 	@PutMapping("/posts")
 	public Posts updatePost(@RequestBody Posts post) {
-		System.out.println("/post - PUT");
+		System.out.println("/posts - PUT");
 		return postService.updatePost(post);
 	}
+	
+	/**
+	 * Deletes the given post
+	 * @param post
+	 * @return
+	 */
+	@DeleteMapping("/posts")
+	public void deletePost(@RequestBody Posts post) {
+		System.out.println("/posts - DELETE");
+		postService.deletePost(post);
+	}
+	
 	
 	/**
 	 * Get a users posts by id

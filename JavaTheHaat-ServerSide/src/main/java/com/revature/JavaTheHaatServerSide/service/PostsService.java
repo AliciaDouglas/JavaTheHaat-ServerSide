@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.revature.JavaTheHaatServerSide.beans.Posts;
 import com.revature.JavaTheHaatServerSide.beans.Steps;
+import com.revature.JavaTheHaatServerSide.repository.CommentsRepo;
 import com.revature.JavaTheHaatServerSide.repository.PostsRepo;
 import com.revature.JavaTheHaatServerSide.repository.StepsRepo;
 
@@ -20,6 +21,9 @@ public class PostsService {
 	
 	@Autowired
 	StepsRepo stepsRepo;
+	
+	@Autowired
+	CommentsRepo commentsRepo;
 
 	/**
 	 * Gets all posts from the DAO
@@ -69,6 +73,18 @@ public class PostsService {
 		Posts updatedPost = postsRepo.save(post);
 		stepsRepo.saveAll(post.getSteps());
 		return updatedPost;
+	}
+
+	/**
+	 * Deletes the given post
+	 * @param post
+	 * @return
+	 */
+	public void deletePost(Posts post) {
+		System.out.println("delete post service");
+		stepsRepo.deleteAll(post.getSteps());
+		commentsRepo.deleteAll(post.getComments());
+		postsRepo.delete(post);
 	}
 
 }
