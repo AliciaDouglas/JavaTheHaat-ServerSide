@@ -51,4 +51,13 @@ public class PostsService {
 		return newPost;
 	}
 
+	/**
+	 * Get a users posts using their id
+	 * @param id
+	 * @return
+	 */
+	public List<Posts> getPostsById(int id) {
+		return (List<Posts>) postsRepo.findByUId(id);
+	}
+
 }

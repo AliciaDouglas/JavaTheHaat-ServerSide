@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,6 +40,18 @@ public class PostsCtrl {
 		System.out.println(post);
 		post = postService.newPost(post);
 		return post;
+	}
+	
+	/**
+	 * Get a users posts by id
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/posts/{id}")
+	public List<Posts> getPostsById(@PathVariable int id){
+		System.out.println("/posts/{id} - GET");
+		List<Posts> posts = postService.getPostsById(id);
+		return posts;
 	}
 	
 }
