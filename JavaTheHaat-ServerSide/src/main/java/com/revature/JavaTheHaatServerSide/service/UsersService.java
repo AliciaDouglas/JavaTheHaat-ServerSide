@@ -50,8 +50,7 @@ public class UsersService {
 	 * @return
 	 */
 	public Users updateUserInfo(Users user) {
-		// TODO Auto-generated method stub
-		return null;
+		return usersRepo.save(user);
 	}
 
 	/**

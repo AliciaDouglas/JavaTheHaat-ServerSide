@@ -70,10 +70,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PutMapping("/users")
-	public String updateUserInfo(@RequestBody Users user) {
+	public Users updateUserInfo(@RequestBody Users user) {
 		System.out.println("updateUsersInfo");
-//		user = userService.updateUserInfo(user);
-		return "/users -PUT";
+		user = userService.updateUserInfo(user);
+		return user;
 	}
 
 }
