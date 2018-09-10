@@ -74,9 +74,20 @@ public class PostsCtrl {
 	 */
 	@GetMapping("/posts/{id}")
 	public List<Posts> getPostsById(@PathVariable int id){
-		System.out.println("/posts/{id} - GET");
+		System.out.println("/posts/" + id + " - GET");
 		List<Posts> posts = postService.getPostsById(id);
 		return posts;
+	}
+	
+	/**
+	 * Get posts by category id
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/posts/category/{id}")
+	public List<Posts> getPostByCategoryId(@PathVariable int id){
+		System.out.println("/posts/category/" + id + " - GET");
+		return postService.getPostByCatgoryId(id);
 	}
 	
 }

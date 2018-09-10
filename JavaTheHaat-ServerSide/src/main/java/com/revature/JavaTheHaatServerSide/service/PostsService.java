@@ -92,4 +92,13 @@ public class PostsService {
 		postsRepo.delete(post);
 	}
 
+	/**
+	 * Get posts by category id
+	 * @param id
+	 * @return
+	 */
+	public List<Posts> getPostByCatgoryId(int id) {
+		return postsRepo.findByCategoryId(id);
+	}
+
 }
