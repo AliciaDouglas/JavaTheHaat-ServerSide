@@ -20,7 +20,10 @@ public class UsersService {
 	 * @return user
 	 */
 	public Users login(Users user) {
-		// TODO Auto-generated method stub
+		Users loginUser = usersRepo.findByUsername(user.getUsername());
+		if (loginUser != null && user.getPassword().equals(loginUser.getPassword())) {
+			return loginUser;
+		}
 		return null;
 	}
 
