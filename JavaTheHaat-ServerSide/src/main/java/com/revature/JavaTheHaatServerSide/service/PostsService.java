@@ -7,6 +7,7 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.revature.JavaTheHaatServerSide.beans.Comments;
 import com.revature.JavaTheHaatServerSide.beans.Posts;
 import com.revature.JavaTheHaatServerSide.beans.Steps;
 import com.revature.JavaTheHaatServerSide.repository.CommentsRepo;
@@ -82,8 +83,12 @@ public class PostsService {
 	 */
 	public void deletePost(Posts post) {
 		System.out.println("delete post service");
-		stepsRepo.deleteAll(post.getSteps());
-		commentsRepo.deleteAll(post.getComments());
+		Set<Steps> steps = post.getSteps();
+		post.setSteps(null);
+		Set<Comments> comments = post.getComments();
+		post.setComments(null);
+		stepsRepo.deleteAll(steps);
+		commentsRepo.deleteAll(comments);
 		postsRepo.delete(post);
 	}
 
