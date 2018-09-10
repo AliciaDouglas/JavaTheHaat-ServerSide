@@ -41,12 +41,18 @@ public class Users {
 	@Column(name="PROFILE_PIC")
 	private String profilePic;
 	
-	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-	@JoinColumn(name="ACC_TYPE_ID")
-	private AccountType accType;
+	@Column(name="ACC_TYPE_ID", nullable=false)
+	private int accTypeId;
 	
 	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-	@JoinColumn(name="ACC_STATUS_ID")
+	@JoinColumn(name="ACC_TYPE_ID", insertable=false, updatable=false)
+	private AccountType accType;
+	
+	@Column(name="ACC_STATUS_ID")
+	private int accStatusId;
+	
+	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+	@JoinColumn(name="ACC_STATUS_ID", insertable=false, updatable=false)
 	private AccountStatus accStatus;
 	
 	
@@ -54,9 +60,11 @@ public class Users {
 		super();
 	}
 
+	
+
 
 	public Users(int uId, String fname, String lname, String email, String username, String password, String profilePic,
-			AccountType accType, AccountStatus accStatus) {
+			int accTypeId, AccountType accType, int accStatusId, AccountStatus accStatus) {
 		super();
 		this.uId = uId;
 		this.fname = fname;
@@ -65,9 +73,13 @@ public class Users {
 		this.username = username;
 		this.password = password;
 		this.profilePic = profilePic;
+		this.accTypeId = accTypeId;
 		this.accType = accType;
+		this.accStatusId = accStatusId;
 		this.accStatus = accStatus;
 	}
+
+
 
 
 	public int getuId() {
@@ -78,6 +90,36 @@ public class Users {
 	public void setuId(int uId) {
 		this.uId = uId;
 	}
+	
+	
+
+
+	public int getAccTypeId() {
+		return accTypeId;
+	}
+
+
+
+
+	public void setAccTypeId(int accTypeId) {
+		this.accTypeId = accTypeId;
+	}
+
+
+
+
+	public int getAccStatusId() {
+		return accStatusId;
+	}
+
+
+
+
+	public void setAccStatusId(int accStatusId) {
+		this.accStatusId = accStatusId;
+	}
+
+
 
 
 	public String getFname() {

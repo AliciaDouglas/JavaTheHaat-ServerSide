@@ -24,4 +24,12 @@ public class CommentsService {
 		return commentsRepo.save(comment);
 	}
 
+	/**
+	 * Delete a comment
+	 * @param comment
+	 */
+	public void deleteComment(Comments comment) {
+		commentsRepo.delete(comment);
+	}
+
 }
