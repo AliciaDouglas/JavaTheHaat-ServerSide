@@ -129,16 +129,13 @@ public class Steps {
 
 
 
-
 	@Override
 	public String toString() {
-		return "Steps [sId=" + sId + ", post=" + post + ", stepNum=" + stepNum + ", stepName=" + stepName
-				+ ", stepText=" + stepText + ", pic=" + pic + "]";
+		return "Steps [sId=" + sId + ", pId=" + pId + ", stepNum=" + stepNum + ", stepName=" + stepName + ", stepText="
+				+ stepText + ", pic=" + pic + "]";
 	}
 
 
-	
-	
-	
+		
 	
 }
