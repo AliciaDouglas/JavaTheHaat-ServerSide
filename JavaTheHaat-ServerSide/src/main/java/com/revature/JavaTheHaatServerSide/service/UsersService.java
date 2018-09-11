@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.JavaTheHaatServerSide.beans.Users;
+import com.revature.JavaTheHaatServerSide.email.Email;
 import com.revature.JavaTheHaatServerSide.repository.UsersRepo;
 
 @Service
@@ -34,7 +35,11 @@ public class UsersService {
 	 * @return user
 	 */
 	public Users registerUser(Users user) {
-		return usersRepo.save(user);
+		Users newUser = usersRepo.save(user);
+		if (newUser.getAccTypeId() == 2) {
+			Email.newAdminEmail(newUser);
+		}
+		return user;
 	}
 
 	
