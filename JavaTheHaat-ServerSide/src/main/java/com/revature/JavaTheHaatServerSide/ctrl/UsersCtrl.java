@@ -25,10 +25,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PostMapping("/login")
-	public String login(@RequestBody Users user) {
+	public Users login(@RequestBody Users user) {
 		System.out.println("login -POST");
-//		user = userService.login(user);
-		return "/login";
+		user = userService.login(user);
+		return user;
 	}
 	
 	/**
