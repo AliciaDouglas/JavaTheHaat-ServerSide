@@ -45,15 +45,16 @@ public class PostsService {
 		System.out.println("posts service -newPost");
 		post.setTimeSubmission(new Date());
 		Set<Steps> steps = post.getSteps();
-//		System.out.println(steps);
+		post.setSteps(null);
+		System.out.println(steps);
 		Posts newPost = postsRepo.save(post);
-		System.out.println("New Post: " + newPost);
+		System.out.println(newPost);
 		for(Steps step: steps) {
 			step.setpId(newPost.getpId());
-			System.out.println("Step: " + step);
+			System.out.println(step);
 		}
-		System.out.println(steps);
 		stepsRepo.saveAll(steps);
+		newPost.setSteps(steps);
 		return newPost;
 	}
 
