@@ -45,6 +45,7 @@ public class PostsService {
 		System.out.println("posts service -newPost");
 		post.setTimeSubmission(new Date());
 		Set<Steps> steps = post.getSteps();
+		post.setSteps(null);
 		System.out.println(steps);
 		Posts newPost = postsRepo.save(post);
 		System.out.println(newPost);
@@ -53,6 +54,7 @@ public class PostsService {
 			System.out.println(step);
 		}
 		stepsRepo.saveAll(steps);
+		newPost.setSteps(steps);
 		return newPost;
 	}
 
