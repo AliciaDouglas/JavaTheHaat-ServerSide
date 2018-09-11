@@ -14,6 +14,10 @@ import com.revature.JavaTheHaatServerSide.beans.Users;
 
 public class Email {
 	
+	/**
+	 * Sends an email to the new user with their username ant password
+	 * @param user
+	 */
 	public static void newAdminEmail(Users user) {
 		
 		final String username = "";

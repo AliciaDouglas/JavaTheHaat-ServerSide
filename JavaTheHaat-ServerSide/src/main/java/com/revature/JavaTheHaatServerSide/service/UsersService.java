@@ -1,6 +1,8 @@
 package com.revature.JavaTheHaatServerSide.service;
 
+import java.nio.charset.Charset;
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,11 +37,34 @@ public class UsersService {
 	 * @return user
 	 */
 	public Users registerUser(Users user) {
-		Users newUser = usersRepo.save(user);
-		if (newUser.getAccTypeId() == 2) {
+		Users newUser = new Users();
+		String randomPassword = generateRandomString();
+		if (user.getAccTypeId() == 2) {
+			user.setPassword(randomPassword);
+			newUser = usersRepo.save(user);
 			Email.newAdminEmail(newUser);
+		} else {
+			newUser = usersRepo.save(user);
 		}
-		return user;
+		return newUser;
+	}
+	
+	
+	public String generateRandomString() {
+		int leftLimit = 33; 
+	    int rightLimit = 126; 
+	    int targetStringLength = 10;
+	    Random random = new Random();
+	    StringBuilder buffer = new StringBuilder(targetStringLength);
+	    for (int i = 0; i < targetStringLength; i++) {
+	        int randomLimitedInt = leftLimit + (int) 
+	          (random.nextFloat() * (rightLimit - leftLimit + 1));
+	        buffer.append((char) randomLimitedInt);
+	    }
+	    String generatedString = buffer.toString();
+	 
+	    System.out.println(generatedString);
+	    return generatedString;
 	}
 
 	
