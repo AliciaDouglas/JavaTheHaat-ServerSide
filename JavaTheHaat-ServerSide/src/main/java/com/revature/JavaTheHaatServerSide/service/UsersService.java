@@ -49,7 +49,10 @@ public class UsersService {
 		return newUser;
 	}
 	
-	
+	/**
+	 * Creates a randomly generated String
+	 * @return
+	 */
 	public String generateRandomString() {
 		int leftLimit = 33; 
 	    int rightLimit = 126; 
