@@ -41,7 +41,7 @@ public class UsersCtrl {
 	@PostMapping("/users")
 	public ResponseEntity<Users> registerUser(@RequestBody Users user) {
 		System.out.println("register -POST");
-		return new ResponseEntity<> (userService.registerUser(user), HttpStatus.OK);
+		return new ResponseEntity<> (userService.registerUser(user), HttpStatus.CREATED);
 	}
 	
 	/**
