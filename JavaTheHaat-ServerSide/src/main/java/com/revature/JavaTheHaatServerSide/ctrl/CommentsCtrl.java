@@ -25,7 +25,7 @@ public class CommentsCtrl {
 	@PostMapping("/comments")
 	public ResponseEntity<Comments> newComment(@RequestBody Comments comment) {
 		System.out.println("/comments - PUSH");
-		return new ResponseEntity<> (commentsService.newComment(comment), HttpStatus.OK);
+		return new ResponseEntity<> (commentsService.newComment(comment), HttpStatus.CREATED);
 	}
 	
 	/**
