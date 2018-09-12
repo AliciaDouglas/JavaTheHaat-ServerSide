@@ -3,6 +3,8 @@ package com.revature.JavaTheHaatServerSide.ctrl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,10 +27,10 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@GetMapping("/posts")
-	public List<Posts> getAllPosts(){
+	public ResponseEntity<List<Posts>> getAllPosts(){
 		System.out.println("getAllPosts -GET");
 		List<Posts> posts = postService.getAllPosts();
-		return posts;
+		return new ResponseEntity<> (posts, HttpStatus.OK);
 	}
 	
 	/**
@@ -37,11 +39,11 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@PostMapping("/posts")
-	public Posts newPost(@RequestBody Posts post) {
+	public ResponseEntity<Posts> newPost(@RequestBody Posts post) {
 		System.out.println("newPost -POST");
 		System.out.println(post);
 		post = postService.newPost(post);
-		return post;
+		return new ResponseEntity<> (post, HttpStatus.OK);
 	}
 	
 	/**
@@ -50,9 +52,9 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@PutMapping("/posts")
-	public Posts updatePost(@RequestBody Posts post) {
+	public ResponseEntity<Posts> updatePost(@RequestBody Posts post) {
 		System.out.println("/posts - PUT");
-		return postService.updatePost(post);
+		return new ResponseEntity<> (postService.updatePost(post), HttpStatus.OK);
 	}
 	
 	/**
@@ -73,10 +75,10 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@GetMapping("/posts/{id}")
-	public List<Posts> getPostsById(@PathVariable int id){
+	public ResponseEntity<List<Posts>> getPostsById(@PathVariable int id){
 		System.out.println("/posts/" + id + " - GET");
 		List<Posts> posts = postService.getPostsById(id);
-		return posts;
+		return new ResponseEntity<> (posts, HttpStatus.OK);
 	}
 	
 	/**
@@ -85,9 +87,9 @@ public class PostsCtrl {
 	 * @return
 	 */
 	@GetMapping("/posts/category/{id}")
-	public List<Posts> getPostByCategoryId(@PathVariable int id){
+	public ResponseEntity<List<Posts>> getPostByCategoryId(@PathVariable int id){
 		System.out.println("/posts/category/" + id + " - GET");
-		return postService.getPostByCatgoryId(id);
+		return new ResponseEntity<> (postService.getPostByCatgoryId(id), HttpStatus.OK);
 	}
 	
 }
