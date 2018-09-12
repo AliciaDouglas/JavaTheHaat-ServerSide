@@ -1,6 +1,5 @@
 package com.revature.JavaTheHaatServerSide.service;
 
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Random;
 
@@ -23,7 +22,8 @@ public class UsersService {
 	 * @return user
 	 */
 	public Users login(Users user) {
-		Users loginUser = usersRepo.findByUsername(user.getUsername());
+		System.out.println("user service - login");
+		Users loginUser = usersRepo.findByEmail(user.getEmail());
 		if (loginUser != null && user.getPassword().equals(loginUser.getPassword())) {
 			return loginUser;
 		}

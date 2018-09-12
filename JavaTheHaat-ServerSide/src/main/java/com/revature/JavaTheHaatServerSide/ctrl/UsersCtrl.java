@@ -3,6 +3,8 @@ package com.revature.JavaTheHaatServerSide.ctrl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,10 +27,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PostMapping("/login")
-	public Users login(@RequestBody Users user) {
+	public ResponseEntity<Users> login(@RequestBody Users user) {
 		System.out.println("login -POST");
 		user = userService.login(user);
-		return user;
+		return new ResponseEntity<>(user, HttpStatus.OK);
 	}
 	
 	/**
@@ -37,9 +39,9 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PostMapping("/users")
-	public Users registerUser(@RequestBody Users user) {
+	public ResponseEntity<Users> registerUser(@RequestBody Users user) {
 		System.out.println("register -POST");
-		return userService.registerUser(user);
+		return new ResponseEntity<> (userService.registerUser(user), HttpStatus.OK);
 	}
 	
 	/**
@@ -47,9 +49,9 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@GetMapping("/users")
-	public List<Users> getAllUsers(){
+	public ResponseEntity<List<Users>> getAllUsers(){
 		System.out.println("/users - GET");
-		return userService.getAllUsers();
+		return new ResponseEntity<> (userService.getAllUsers(), HttpStatus.OK);
 	}
 	
 	/**
@@ -58,10 +60,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@GetMapping("/users/{id}")
-	public Users getUserById(@PathVariable int id) {
+	public ResponseEntity<Users> getUserById(@PathVariable int id) {
 		System.out.println("getUsersById -GET");
 		Users user = userService.getUserById(id);
-		return user;
+		return new ResponseEntity<> (user, HttpStatus.OK);
 	}
 	
 	/**
@@ -70,10 +72,10 @@ public class UsersCtrl {
 	 * @return
 	 */
 	@PutMapping("/users")
-	public Users updateUserInfo(@RequestBody Users user) {
+	public ResponseEntity<Users> updateUserInfo(@RequestBody Users user) {
 		System.out.println("updateUsersInfo");
 		user = userService.updateUserInfo(user);
-		return user;
+		return new ResponseEntity<> (user, HttpStatus.OK);
 	}
 
 }

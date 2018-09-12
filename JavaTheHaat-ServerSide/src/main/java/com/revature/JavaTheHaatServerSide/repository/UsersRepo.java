@@ -19,4 +19,11 @@ public interface UsersRepo extends CrudRepository<Users, Integer>{
 	 * @return
 	 */
 	Users findByUsername(String username);
+	
+	/**
+	 * find a user by email
+	 * @param email
+	 * @return
+	 */
+	Users findByEmail(String email);
 }
