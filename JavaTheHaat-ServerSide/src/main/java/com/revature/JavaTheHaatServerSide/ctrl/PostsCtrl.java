@@ -43,7 +43,7 @@ public class PostsCtrl {
 		System.out.println("newPost -POST");
 		System.out.println(post);
 		post = postService.newPost(post);
-		return new ResponseEntity<> (post, HttpStatus.OK);
+		return new ResponseEntity<> (post, HttpStatus.CREATED);
 	}
 	
 	/**
