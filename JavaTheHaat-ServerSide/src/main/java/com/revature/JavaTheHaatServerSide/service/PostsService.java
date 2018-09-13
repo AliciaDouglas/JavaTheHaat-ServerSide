@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,40 +17,41 @@ import com.revature.JavaTheHaatServerSide.repository.StepsRepo;
 
 @Service
 public class PostsService {
-	
+
+	final static Logger logger = Logger.getLogger(PostsService.class);
+
 	@Autowired
 	PostsRepo postsRepo;
-	
+
 	@Autowired
 	StepsRepo stepsRepo;
-	
+
 	@Autowired
 	CommentsRepo commentsRepo;
 
 	/**
 	 * Gets all posts from the DAO
+	 * 
 	 * @return
 	 */
 	public List<Posts> getAllPosts() {
-		System.out.println("posts service -getAllPosts");
+		logger.info("PostsService - getAllPosts()");
 		return (List<Posts>) postsRepo.findAll();
 	}
 
 	/**
-	 * Create a new post
-	 * Take post object and send to DAO
+	 * Create a new post Take post object and send to DAO
+	 * 
 	 * @param post
 	 * @return
 	 */
 	public Posts newPost(Posts post) {
-		System.out.println("posts service -newPost");
+		logger.info("PostsService - newPost()");
 		post.setTimeSubmission(new Date());
 		Set<Steps> steps = post.getSteps();
 		post.setSteps(null);
-		System.out.println(steps);
 		Posts newPost = postsRepo.save(post);
-		System.out.println(newPost);
-		for(Steps step: steps) {
+		for (Steps step : steps) {
 			step.setpId(newPost.getpId());
 			System.out.println(step);
 		}
@@ -60,19 +62,23 @@ public class PostsService {
 
 	/**
 	 * Get a users posts using their id
+	 * 
 	 * @param id
 	 * @return
 	 */
 	public List<Posts> getPostsById(int id) {
+		logger.info("PostsService - getPostsById()");
 		return (List<Posts>) postsRepo.findByUId(id);
 	}
 
 	/**
 	 * updates a post using the post object passed in
+	 * 
 	 * @param post
 	 * @return
 	 */
 	public Posts updatePost(Posts post) {
+		logger.info("PostsService - updatePost()");
 		Posts updatedPost = postsRepo.save(post);
 		stepsRepo.saveAll(post.getSteps());
 		return updatedPost;
@@ -80,11 +86,12 @@ public class PostsService {
 
 	/**
 	 * Deletes the given post
+	 * 
 	 * @param post
 	 * @return
 	 */
 	public void deletePost(Posts post) {
-		System.out.println("delete post service");
+		logger.info("PostsService - deletePost()");
 		Set<Steps> steps = post.getSteps();
 		post.setSteps(null);
 		Set<Comments> comments = post.getComments();
@@ -96,10 +103,12 @@ public class PostsService {
 
 	/**
 	 * Get posts by category id
+	 * 
 	 * @param id
 	 * @return
 	 */
 	public List<Posts> getPostByCatgoryId(int id) {
+		logger.info("PostsService - getPostByCategoryId()");
 		return postsRepo.findByCategoryId(id);
 	}
 
