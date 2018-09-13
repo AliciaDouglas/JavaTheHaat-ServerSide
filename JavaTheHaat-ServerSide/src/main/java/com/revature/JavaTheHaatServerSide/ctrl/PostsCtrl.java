@@ -2,6 +2,7 @@ package com.revature.JavaTheHaatServerSide.ctrl;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +20,8 @@ import com.revature.JavaTheHaatServerSide.service.PostsService;
 @RestController
 public class PostsCtrl {
 
+	final static Logger logger = Logger.getLogger(PostsCtrl.class);
+	
 	@Autowired
 	PostsService postService;
 	
@@ -28,7 +31,7 @@ public class PostsCtrl {
 	 */
 	@GetMapping("/posts")
 	public ResponseEntity<List<Posts>> getAllPosts(){
-		System.out.println("getAllPosts -GET");
+		logger.info("/posts -GET  getAllPosts()");
 		List<Posts> posts = postService.getAllPosts();
 		return new ResponseEntity<> (posts, HttpStatus.OK);
 	}
@@ -40,8 +43,7 @@ public class PostsCtrl {
 	 */
 	@PostMapping("/posts")
 	public ResponseEntity<Posts> newPost(@RequestBody Posts post) {
-		System.out.println("newPost -POST");
-		System.out.println(post);
+		logger.info("/posts -POST  newPost()");
 		post = postService.newPost(post);
 		return new ResponseEntity<> (post, HttpStatus.CREATED);
 	}
@@ -53,7 +55,7 @@ public class PostsCtrl {
 	 */
 	@PutMapping("/posts")
 	public ResponseEntity<Posts> updatePost(@RequestBody Posts post) {
-		System.out.println("/posts - PUT");
+		logger.info("/posts - PUT  updatePost()");
 		return new ResponseEntity<> (postService.updatePost(post), HttpStatus.OK);
 	}
 	
@@ -64,7 +66,7 @@ public class PostsCtrl {
 	 */
 	@DeleteMapping("/posts")
 	public void deletePost(@RequestBody Posts post) {
-		System.out.println("/posts - DELETE");
+		logger.info("/posts - DELETE  deletePost()");
 		postService.deletePost(post);
 	}
 	
@@ -76,7 +78,7 @@ public class PostsCtrl {
 	 */
 	@GetMapping("/posts/{id}")
 	public ResponseEntity<List<Posts>> getPostsById(@PathVariable int id){
-		System.out.println("/posts/" + id + " - GET");
+		logger.info("/posts/" + id + " - GET  getPostsById()");
 		List<Posts> posts = postService.getPostsById(id);
 		return new ResponseEntity<> (posts, HttpStatus.OK);
 	}
@@ -88,7 +90,7 @@ public class PostsCtrl {
 	 */
 	@GetMapping("/posts/category/{id}")
 	public ResponseEntity<List<Posts>> getPostByCategoryId(@PathVariable int id){
-		System.out.println("/posts/category/" + id + " - GET");
+		logger.info("/posts/category/" + id + " - GET  getPostByCategoryId()");
 		return new ResponseEntity<> (postService.getPostByCatgoryId(id), HttpStatus.OK);
 	}
 	

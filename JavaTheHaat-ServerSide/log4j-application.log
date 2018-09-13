@@ -1,0 +1,3 @@
+2018-09-13 11:27:02 INFO  PostsCtrl:93 - /posts/category/2 - GET  PostsCtrl.getPostByCategoryId()
+2018-09-13 11:33:53 INFO  PostsCtrl:81 - /posts/1 - GET  PostsCtrl.getPostsById()
+2018-09-13 11:34:10 INFO  UsersCtrl:56 - /users - GET  UsersCtrl.getAllUsers()

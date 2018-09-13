@@ -1,5 +1,6 @@
 package com.revature.JavaTheHaatServerSide.ctrl;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,8 @@ import com.revature.JavaTheHaatServerSide.service.CommentsService;
 @RestController
 public class CommentsCtrl {
 
+	final static Logger logger = Logger.getLogger(CommentsCtrl.class);
+
 	@Autowired
 	CommentsService commentsService;
 	
@@ -24,7 +27,7 @@ public class CommentsCtrl {
 	 */
 	@PostMapping("/comments")
 	public ResponseEntity<Comments> newComment(@RequestBody Comments comment) {
-		System.out.println("/comments - PUSH");
+		logger.info("/comments - POST  newComment()");
 		return new ResponseEntity<> (commentsService.newComment(comment), HttpStatus.CREATED);
 	}
 	
@@ -34,7 +37,7 @@ public class CommentsCtrl {
 	 */
 	@DeleteMapping("/comments")
 	public void deleteComment(@RequestBody Comments comment) {
-		System.out.println("/comments - DELETE");
+		logger.info("/comments - DELETE  deleteComment()");
 		commentsService.deleteComment(comment);
 	}
 	
