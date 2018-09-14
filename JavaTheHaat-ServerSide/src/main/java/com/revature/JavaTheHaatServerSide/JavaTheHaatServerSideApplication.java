@@ -9,4 +9,5 @@ public class JavaTheHaatServerSideApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JavaTheHaatServerSideApplication.class, args);
 	}
+	
 }
