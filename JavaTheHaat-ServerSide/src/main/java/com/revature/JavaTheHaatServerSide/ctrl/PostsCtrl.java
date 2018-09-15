@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -74,11 +75,22 @@ public class PostsCtrl {
 	 * @param id
 	 * @return
 	 */
-	@GetMapping("/posts/{id}")
-	public ResponseEntity<List<Posts>> getPostsById(@PathVariable int id){
+	@GetMapping("/posts/users/{id}")
+	public ResponseEntity<List<Posts>> getPostsByUsersId(@PathVariable int id){
 		System.out.println("/posts/" + id + " - GET");
-		List<Posts> posts = postService.getPostsById(id);
+		List<Posts> posts = postService.getPostsByUsersId(id);
 		return new ResponseEntity<> (posts, HttpStatus.OK);
+	}
+	
+	/**
+	 * Get a post by pId
+	 * @param id
+	 * @return
+	 */
+	@GetMapping("/posts/{id}")
+	public ResponseEntity<Posts> getPostsById(@PathVariable int id){
+		Posts post = postService.getPostById(id);
+		return new ResponseEntity<> (post, HttpStatus.OK);
 	}
 	
 	/**
