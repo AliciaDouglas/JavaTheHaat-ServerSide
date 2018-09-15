@@ -2,6 +2,7 @@ package com.revature.JavaTheHaatServerSide.service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,8 +64,17 @@ public class PostsService {
 	 * @param id
 	 * @return
 	 */
-	public List<Posts> getPostsById(int id) {
+	public List<Posts> getPostsByUsersId(int id) {
 		return (List<Posts>) postsRepo.findByUId(id);
+	}
+	
+	/**
+	 * Get posts by pId
+	 * @param id
+	 * @return
+	 */
+	public Posts getPostById(int id) {
+		return postsRepo.findByPId(id);
 	}
 
 	/**
