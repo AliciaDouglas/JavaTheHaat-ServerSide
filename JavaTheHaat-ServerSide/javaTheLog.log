@@ -14,3 +14,5 @@
 2018-09-13 14:56:03 INFO  PostsService:38 - PostsService - getAllPosts()
 2018-09-13 14:56:24 INFO  PostsCtrl:34 - /posts -GET  getAllPosts()
 2018-09-13 14:56:24 INFO  PostsService:38 - PostsService - getAllPosts()
+2018-09-14 15:06:36 INFO  UsersCtrl:56 - /users - GET  getAllUsers()
+2018-09-14 15:06:36 INFO  UsersService:108 - usersService - getAllUsers()
