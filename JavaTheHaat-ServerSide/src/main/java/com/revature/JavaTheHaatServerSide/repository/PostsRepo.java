@@ -21,5 +21,12 @@ public interface PostsRepo extends CrudRepository<Posts, Integer>{
 	 * @return
 	 */
 	List<Posts> findByCategoryId(int categoryId);
+	
+	/**
+	 * Get post by pId
+	 * @param pId
+	 * @return
+	 */
+	Posts findByPId(int pId);
 
 }
