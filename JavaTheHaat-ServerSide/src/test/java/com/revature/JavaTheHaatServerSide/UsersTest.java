@@ -18,8 +18,6 @@ import com.revature.JavaTheHaatServerSide.beans.Users;
 import com.revature.JavaTheHaatServerSide.repository.UsersRepo;
 import com.revature.JavaTheHaatServerSide.service.UsersService;
 
-import io.restassured.RestAssured;
-
 @RunWith(MockitoJUnitRunner.class)
 @SpringBootTest(webEnvironment= WebEnvironment.NONE)
 public class UsersTest {

@@ -18,3 +18,5 @@
 2018-09-14 15:06:36 INFO  UsersService:108 - usersService - getAllUsers()
 2018-09-16 16:42:20 INFO  PostsCtrl:34 - /posts -GET  getAllPosts()
 2018-09-16 16:42:20 INFO  PostsService:38 - PostsService - getAllPosts()
+2018-09-16 18:32:58 INFO  UsersService:45 - usersService - registerUser()
+2018-09-16 18:32:58 INFO  UsersService:64 - usersService - generateRandomString()
