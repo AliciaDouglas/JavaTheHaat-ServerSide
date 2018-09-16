@@ -2,6 +2,7 @@ package com.revature.JavaTheHaatServerSide.ctrl;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,8 @@ import com.revature.JavaTheHaatServerSide.service.UsersService;
 @RestController
 public class UsersCtrl {
 	
+	final static Logger logger = Logger.getLogger(UsersCtrl.class);
+	
 	@Autowired
 	UsersService userService;
 	
@@ -28,7 +31,7 @@ public class UsersCtrl {
 	 */
 	@PostMapping("/login")
 	public ResponseEntity<Users> login(@RequestBody Users user) {
-		System.out.println("login -POST");
+		logger.info("/login -POST  login()");
 		user = userService.login(user);
 		return new ResponseEntity<>(user, HttpStatus.OK);
 	}
@@ -40,7 +43,7 @@ public class UsersCtrl {
 	 */
 	@PostMapping("/users")
 	public ResponseEntity<Users> registerUser(@RequestBody Users user) {
-		System.out.println("register -POST");
+		logger.info("/users -POST  registerUser()");
 		return new ResponseEntity<> (userService.registerUser(user), HttpStatus.CREATED);
 	}
 	
@@ -50,7 +53,7 @@ public class UsersCtrl {
 	 */
 	@GetMapping("/users")
 	public ResponseEntity<List<Users>> getAllUsers(){
-		System.out.println("/users - GET");
+		logger.info("/users - GET  getAllUsers()");
 		return new ResponseEntity<> (userService.getAllUsers(), HttpStatus.OK);
 	}
 	
@@ -61,7 +64,7 @@ public class UsersCtrl {
 	 */
 	@GetMapping("/users/{id}")
 	public ResponseEntity<Users> getUserById(@PathVariable int id) {
-		System.out.println("getUsersById -GET");
+		logger.info("/users/" + id + " -GET  getUserById()");
 		Users user = userService.getUserById(id);
 		return new ResponseEntity<> (user, HttpStatus.OK);
 	}
@@ -73,7 +76,7 @@ public class UsersCtrl {
 	 */
 	@PutMapping("/users")
 	public ResponseEntity<Users> updateUserInfo(@RequestBody Users user) {
-		System.out.println("updateUsersInfo");
+		logger.info("/users -PUT  updateUserInfo()");
 		user = userService.updateUserInfo(user);
 		return new ResponseEntity<> (user, HttpStatus.OK);
 	}
