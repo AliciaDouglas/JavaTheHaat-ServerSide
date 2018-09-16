@@ -10,16 +10,21 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.log4j.Logger;
+
 import com.revature.JavaTheHaatServerSide.beans.Users;
+import com.revature.JavaTheHaatServerSide.ctrl.PostsCtrl;
 
 public class Email {
+	
+	final static Logger logger = Logger.getLogger(Email.class);
 	
 	/**
 	 * Sends an email to the new user with their username ant password
 	 * @param user
 	 */
 	public static void newAdminEmail(Users user) {
-		
+		logger.info("newAdminEmail()");
 		final String username = "";
 		final String password = "";
 		final String receiver = user.getEmail();
@@ -51,7 +56,6 @@ public class Email {
 			message.setText(text);
 			
 			Transport.send(message);
-			System.out.println("Email Sent");
 		} catch (MessagingException e) {
 			throw new RuntimeException(e); 
 		}
