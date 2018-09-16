@@ -63,7 +63,7 @@ public class PostsCtrl {
 	 * @param post
 	 * @return
 	 */
-	@DeleteMapping("/posts")
+	@PutMapping("/posts/delete")
 	public void deletePost(@RequestBody Posts post) {
 		System.out.println("/posts - DELETE");
 		postService.deletePost(post);
