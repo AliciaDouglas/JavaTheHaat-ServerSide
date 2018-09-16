@@ -65,7 +65,7 @@ public class PostsCtrl {
 	 * @param post
 	 * @return
 	 */
-	@DeleteMapping("/posts")
+	@PutMapping("/posts/delete")
 	public void deletePost(@RequestBody Posts post) {
 		logger.info("/posts - DELETE  deletePost()");
 		postService.deletePost(post);
