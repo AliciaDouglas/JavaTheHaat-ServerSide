@@ -89,6 +89,11 @@ public class PostsService {
 	public Posts updatePost(Posts post) {
 		logger.info("PostsService - updatePost()");
 		Posts updatedPost = postsRepo.save(post);
+		Set<Steps> steps = post.getSteps();
+		for (Steps step : steps) {
+			step.setpId(post.getpId());
+			System.out.println(step);
+		}
 		stepsRepo.saveAll(post.getSteps());
 		return updatedPost;
 	}
