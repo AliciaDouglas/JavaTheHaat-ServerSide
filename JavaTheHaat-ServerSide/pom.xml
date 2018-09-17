@@ -95,6 +95,15 @@
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
 		</dependency>
+		
+		<!-- JUnit -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>log4j</groupId>
