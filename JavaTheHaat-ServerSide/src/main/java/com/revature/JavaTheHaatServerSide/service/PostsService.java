@@ -95,7 +95,6 @@ public class PostsService {
 			stepsRepo.save(step);
 			System.out.println(step);
 		}
-//		stepsRepo.saveAll(post.getSteps());
 		return updatedPost;
 	}
 
